@@ -3,13 +3,20 @@
  * @return {boolean}
  */
 var isPowerOfThree = function(n) {
-      if(n < 1){
-        return false;
-    }
+ // if(num === 3 || num===1) return true;
+ //        if(num === 0) return false;
+ //        let ifPower = Math.pow(3,n);
+ //        if(ifPower === num){
+ //            return true;
+ //        }
+ //        if(num%ifPower === num){
+ //            return false;
+ //        }
+ //        return isPowerOfThree(num, n+1);
 
-    while(n%3 === 0){
-        n = n/3;
+    while(n > 1){
+        n /= 3
     }
-    return n===1;
-
+    
+    return n === 1
 };
